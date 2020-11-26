@@ -34,3 +34,4 @@ export const selectSignedIn=(state)=> state.user.isSignedIn;
 export const selectUserData=(state)=> state.user.userData;
 export const selectSignedIn=(state)=> state.user.isSignedIn;
 export const selectSignedIn=(state)=> state.user.isSignedIn;
+export default userSlice.reducer;
