@@ -29,9 +29,9 @@ export const
     setUserData,
     setInput,
     setBlogData,
-}=userSlice.action;
+}=userSlice.actions;
 export const selectSignedIn=(state)=> state.user.isSignedIn;
 export const selectUserData=(state)=> state.user.userData;
-export const selectSignedIn=(state)=> state.user.isSignedIn;
-export const selectSignedIn=(state)=> state.user.isSignedIn;
+export const selectUserInput=(state)=> state.user.searchInput;
+export const selectBlogData=(state)=> state.user.blogData;
 export default userSlice.reducer;
