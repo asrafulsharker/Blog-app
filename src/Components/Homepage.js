@@ -3,6 +3,7 @@ import React from 'react'
 import GoogleLogin from 'react-google-login'
 import { selectSignedIn } from '../features/userSlice'
 import { useSelector } from "react-redux";
+import '../styling/home.css';
 
 const Homepage = () => {
     const login =(response)=>{
