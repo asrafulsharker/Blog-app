@@ -1,13 +1,16 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 import GoogleLogin from 'react-google-login'
-import { selectSignedIn } from '../features/userSlice'
-import { useSelector } from "react-redux";
+import { selectSignedIn, setSignedIn, setUserData } from '../features/userSlice'
+import { useSelector ,useDispatch} from "react-redux";
 import '../styling/home.css';
 
 const Homepage = () => {
+    const dispatch=useDispatch()
     const login =(response)=>{
         console.log(response);
+        dispatch(setSignedIn(true))
+        dispatch(setUserData(response.profileObj));
     }
     const isSignedIn = useSelector(selectSignedIn);
     return (
