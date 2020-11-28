@@ -3,6 +3,7 @@ import React from 'react'
 import GoogleLogin from 'react-google-login'
 import { selectSignedIn, setSignedIn, setUserData } from '../features/userSlice'
 import { useSelector ,useDispatch} from "react-redux";
+import imagelogo from '../images/newslogo.png';
 import '../styling/home.css';
 
 const Homepage = () => {
@@ -17,7 +18,7 @@ const Homepage = () => {
         <div className="home__page" style={{display:isSignedIn ? "none" : ""}}>
             {!isSignedIn ?  (  
                      <div className="login__message">
-                <h1>Book</h1>
+                <img className="imageLogo" src={imagelogo} alt="News"/>
                 <p>
                     We provide high quality online resource for reading blogs. Just sign up ans start reading some quality blogs.
                 </p>
