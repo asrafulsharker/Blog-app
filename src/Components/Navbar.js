@@ -55,7 +55,7 @@ const Navbar = () => {
           />
           <h1 className="signedIn">{userData?.givenName}</h1>
           <GoogleLogout
-            clientId="57529085775-fk8rn8hren1q8o5ja2idq4m7hug5aong.apps.googleusercontent.com"
+            clientId="112979829907-m375ukmmj4big63hjf0pab3g4kqkis4t.apps.googleusercontent.com"
             render={(renderProps) => (
               <button
                 onClick={renderProps.onClick}
